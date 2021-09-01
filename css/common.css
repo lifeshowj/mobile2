@@ -9,7 +9,7 @@ small { font-size: 1em; }
 /* body */
 body { background: linear-gradient(180deg, #9ccaf0 0, #fff 100%) no-repeat;   }
 /* 헤더 */
-#mainHeader { height: 279px; background: url(../images/bg_header.png) no-repeat; }
+#mainHeader { height: 279px; background: url(../images/bg_header.png) no-repeat center/cover; }
 #mainHeader h1 { padding: 20px 0 0 20px; color: #ffff00;
                 font-size: 50px; }
 /* 메인 */
@@ -38,7 +38,7 @@ main { width: 740px; float: left; }
           background: #061f1f; color: #fff; }
 /* 600-1023 */
 @media all and ( max-width: 1023px ) {
-    #Wrap { width: 580px; } 
+    #Wrap { width: 100%; margin: 0; border: 0px; } 
     main { width: auto; float: none; }
     #sidebar { width: auto; float: none; }
     #sidebar img { width: 176px; }
@@ -46,7 +46,6 @@ main { width: 740px; float: left; }
 /* 599이하 */
 @media all and ( max-width: 599px ) {
     body { background: none;}
-    #Wrap { width: 100%; border: 0; margin: 0; }
     #mainHeader { background: #061f1f; height: 75px; }
     #mainHeader h1 { padding: 10px 0 0 10px; font-size: 30px; }
     #gnb { height: auto; padding: 14px 20px 0; }
