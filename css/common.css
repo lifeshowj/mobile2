@@ -1,0 +1,58 @@
+@charset "utf-8";
+/* 초기화 */
+body, h1, h2, h3, a, ul, p { margin: 0; padding: 0;}
+li { list-style: none; }
+a { text-decoration: none;}
+address { font-style: normal; }
+small { font-size: 1em; }
+.hidden { position: absolute; left: -9999px; }
+/* body */
+body { background: linear-gradient(180deg, #9ccaf0 0, #fff 100%) no-repeat;   }
+/* 헤더 */
+#mainHeader { height: 279px; background: url(../images/bg_header.png) no-repeat; }
+#mainHeader h1 { padding: 20px 0 0 20px; color: #ffff00;
+                font-size: 50px; }
+/* 메인 */
+#gnb { height: 60px; }
+#gnb ul { }
+#gnb ul li { width: 25%;  float: left; }
+#gnb ul li a { display: block; 
+               text-align: center;
+               line-height: 60px; 
+               background: #006600; color: #fff; }
+/* 본문 */
+#Wrap { width: 960px; margin: 8px auto 0; border: 1px solid #e7e7e7; background: #fff; }
+main { width: 740px; float: left; }
+#content { padding: 30px 20px; }0
+#content h3 { margin: 20px 0; }
+#content p { margin-bottom: 10px; font-size: 14px; }
+/* 사진모음 */
+#sidebar { width: 220px; float: left;
+           padding: 20px 0;
+           text-align: center;
+           background: #ddffdd; }
+#sidebar img { border: 1px solid #ccc; }
+/* 푸터 */
+#footer { clear: both; padding: 20px 0;
+          text-align: center; 
+          background: #061f1f; color: #fff; }
+/* 600-1023 */
+@media all and ( max-width: 1023px ) {
+    #Wrap { width: 580px; } 
+    main { width: auto; float: none; }
+    #sidebar { width: auto; float: none; }
+    #sidebar img { width: 176px; }
+ }
+/* 599이하 */
+@media all and ( max-width: 599px ) {
+    body { background: none;}
+    #Wrap { width: 100%; border: 0; margin: 0; }
+    #mainHeader { background: #061f1f; height: 75px; }
+    #mainHeader h1 { padding: 10px 0 0 10px; font-size: 30px; }
+    #gnb { height: auto; padding: 14px 20px 0; }
+    #gnb ul li { width: auto; float: none;
+                margin-bottom: 10px; }
+    #gnb ul li a { background: none; color: #000;
+                    border: 1px solid #000; border-radius: 10px; }
+    #sidebar { background: none; }
+    #sidebar img { width: 90%; }
